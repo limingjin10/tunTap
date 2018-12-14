@@ -132,7 +132,7 @@ def openTunTap():
         tuntap,
         TAP_IOCTL_CONFIG_TUN,
         configTunParam.encode(),
-        12,
+        len(configTunParam.encode()),
         None
     )
 
